@@ -17,14 +17,16 @@ public class MainDriver {
 
     public static void main(String[] args) {
 
-        Iuser ud = new userJDBC();
-        UserService us = new UserService(ud);
+       // Iuser ud = new userJDBC();
+       // UserService us = new UserService(ud);
+
+
 
 
         LocalDate myDate = LocalDate.now();
         Reimbursement r1 = new Reimbursement(3200, myDate, "Stayed in hotel", 1);
         r1.toString();
-        System.out.print(r1.toString());
+        //System.out.print(r1.toString());
 
         Ireimbursement createTest = new reimbursementJDBC();
 

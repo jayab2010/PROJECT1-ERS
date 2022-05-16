@@ -31,9 +31,9 @@ public class ConnectionSingleton {
 
         try{
             prop.load(is);
-            url = (String)prop.getProperty("url");
-            username = (String)prop.getProperty("username");
-            password = (String)prop.getProperty("password");
+            url = prop.getProperty("url");
+            username = prop.getProperty("username");
+            password = prop.getProperty("password");
         }
         catch(IOException e){
             e.printStackTrace();

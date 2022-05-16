@@ -8,12 +8,20 @@ java:S2293("YReplace the type specification in this constructor call with the d
 java:S2293J"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÅÍÇŠÿÿÿÿÿ8êÉáØŒ0
 i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(‚ìâ¢8ìÉáØŒ0
 d
-java:S2259/"GA "NullPointerException" could be thrown; "statement" is nullable here.(‚µŠ¯8üÉáØŒ0
-d
 java:S2259Q"GA "NullPointerException" could be thrown; "statement" is nullable here.(‚µŠ¯8üÉáØŒ0
+d
+java:S2259/"GA "NullPointerException" could be thrown; "statement" is nullable here.(‚µŠ¯8üÉáØŒ0
 i
 java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(œ©ûÿÿÿÿ8üÉáØŒ0
 
 java:S1186m"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ñ£Å8şÉáØŒ0
 Ÿ
 java:S1186‡"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ûÓèØ8şÉáØŒ0
+H
+java:S1168t"+Return an empty collection instead of null.(¥¹ï8‹î¹ÙŒ0
+H
+java:S1168y"+Return an empty collection instead of null.(¥¹ï8Œî¹ÙŒ0
+H
+java:S1168~"+Return an empty collection instead of null.(¥¹ï8î¹ÙŒ0
+I
+java:S1168ƒ"+Return an empty collection instead of null.(¥¹ï8î¹ÙŒ0
