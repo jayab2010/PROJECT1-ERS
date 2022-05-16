@@ -1,0 +1,34 @@
+
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğøıóøÿÿÿÿ8³‘ÊØŒ0
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğøıóøÿÿÿÿ8³‘ÊØŒ0
+m	java:S117("QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–š‘°8´‘ÊØŒ0
+m	java:S1178"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°ìÕ¾8´‘ÊØŒ0
+m	java:S117@"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°‚£œ8´‘ÊØŒ0
+m	java:S117P"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æ…ÔĞ8´‘ÊØŒ0
+r	java:S117X"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªÄêùÿÿÿÿ8´‘ÊØŒ0
+m	java:S117`"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÀÀìÃ8´‘ÊØŒ0
+r	java:S117h"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÚÖæŸşÿÿÿÿ8µ‘ÊØŒ0
+|	java:S116"[Rename this field "reimbursement_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇÍÎøÿÿÿÿ8Á‘ÊØŒ0
+z	java:S116"YRename this field "submitted_date" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å¸Èıÿÿÿÿÿ8Â‘ÊØŒ0
+t	java:S116	"XRename this field "resolved_date" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Äìÿ8Â‘ÊØŒ0
+€	java:S116"_Rename this field "reimbursement_author" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üåÈñûÿÿÿÿ8Â‘ÊØŒ0
+‚	java:S116"aRename this field "reimbursement_resolver" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤ÿ¬àıÿÿÿÿ8Â‘ÊØŒ0
+{	java:S116"_Rename this field "reimbursement_status" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹‚Èñ8Â‘ÊØŒ0
+~	java:S116"]Rename this field "reimbursement_type" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»Æ¼İıÿÿÿÿ8Â‘ÊØŒ0
+]	java:S125"<This block of commented-out lines of code should be removed.(äíèêúÿÿÿÿ8Æ‘ÊØŒ0
+]	java:S125"<This block of commented-out lines of code should be removed.(ÑÃüıÿÿÿÿ8Ç‘ÊØŒ0
+X	java:S125"<This block of commented-out lines of code should be removed.(æè®Ì8Ç‘ÊØŒ0
+j	java:S100$"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üšåœ8È‘ÊØŒ0
+j	java:S100("NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–š‘°8É‘ÊØŒ0
+o	java:S1004"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´¦ø…úÿÿÿÿ8Ê‘ÊØŒ0
+j	java:S1008"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°ìÕ¾8Ë‘ÊØŒ0
+j	java:S100<"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªÛÿ8Ì‘ÊØŒ0
+j	java:S100@"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°‚£œ8Ì‘ÊØŒ0
+j	java:S100L"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äËõ·8Î‘ÊØŒ0
+j	java:S100P"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æ…ÔĞ8Ï‘ÊØŒ0
+o	java:S100T"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İ¶’˜ıÿÿÿÿ8Ğ‘ÊØŒ0
+o	java:S100X"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªÄêùÿÿÿÿ8Ğ‘ÊØŒ0
+j	java:S100\"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û¾ˆ8Ñ‘ÊØŒ0
+j	java:S100`"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÀÀìÃ8Ò‘ÊØŒ0
+j	java:S100d"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘¸²ğ8Ó‘ÊØŒ0
+o	java:S100h"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÚÖæŸşÿÿÿÿ8Ó‘ÊØŒ0
