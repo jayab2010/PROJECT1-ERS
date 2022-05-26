@@ -5,16 +5,13 @@ import com.revature.models.User;
 import com.revature.utils.ConnectionSingleton;
 
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
 
-public class userJDBC implements Iuser{
+public class UserJDBC implements Iuser{
 
 
     public ConnectionSingleton cs = ConnectionSingleton.getConnectionSingleton();
 
-    @Override
-    public void createUser(User u) {
+   /* public void createUser(User u) {
 
         //To create a user, we must get our connection, create a statement, and execute said statement
         Connection c = cs.getConnection();
@@ -31,12 +28,59 @@ public class userJDBC implements Iuser{
 
     }
 
+    */
+
     @Override
-    public List<User> readAllUsers() {
-        return null;
+    public void createUser(User u) {
+
     }
 
     @Override
+    public User readAllUsers(int id) {
+
+        Connection c = cs.getConnection();
+        try {
+            c.setAutoCommit(false);
+            String sql = "{?= call viewAccount(?)}";
+
+            CallableStatement call = c.prepareCall(sql);
+            call.registerOutParameter(1, Types.OTHER);
+            call.setInt(2, id);
+            call.execute();
+            ResultSet rs = (ResultSet) call.getObject(1);
+           User u = null;
+            while (rs.next()) {
+                 u = new User(
+                        rs.getInt(1),
+                        rs.getString(2),
+                        rs.getString(3),
+                        rs.getString(4),
+                        rs.getString(5),
+                        rs.getString(6),
+                        rs.getInt(7)
+                );
+
+            }
+            return u;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    @Override
+    public User readUserByEmail(String email) {
+        return null;
+    }
+
+
+
+
+
+
+
+        /*
+ @Override
     public User readUserByEmail(String email) {
 
         Connection c = cs.getConnection();
@@ -60,6 +104,8 @@ public class userJDBC implements Iuser{
         }
     }
 
+
+
     public User readUserById(int id){
         Connection c = cs.getConnection();
         String sql ="SELECT * FROM users WHERE user_id = ?";
@@ -81,6 +127,8 @@ public class userJDBC implements Iuser{
             return null;
         }
     }
+
+         */
 
     @Override
     public User updateUser(User u) {
@@ -112,7 +160,7 @@ public class userJDBC implements Iuser{
         }
     }
 
-    @Override
+
     public void deleteUser(User u) {
         Connection c = cs.getConnection();
 

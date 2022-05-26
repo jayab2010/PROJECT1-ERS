@@ -1,0 +1,37 @@
+
+‡
+java:S1104"eMake handleCreateReimbursement a static final constant or non-public and provide accessors if needed.(­©ÜÓıÿÿÿÿ8î£€Ì0
+‚
+java:S1104'"eMake handleEmployeeViewPending a static final constant or non-public and provide accessors if needed.(¬¯ÑÜ8ï£€Ì0
+ƒ
+java:S11045"fMake handleEmployeeViewResolved a static final constant or non-public and provide accessors if needed.(½Şë¨8ï£€Ì0
+}
+java:S1104C"`Make handleManagerApprove a static final constant or non-public and provide accessors if needed.(üÖ´š8ğ£€Ì0
+
+java:S1104V"]Make handleManagerDeny a static final constant or non-public and provide accessors if needed.(Í‡¨ûÿÿÿÿ8ğ£€Ì0
+€
+java:S1104k"cMake handleManagerAllPending a static final constant or non-public and provide accessors if needed.(«íƒÁ8ğ£€Ì0
+†
+java:S1104}"dMake handleManagerAllResolved a static final constant or non-public and provide accessors if needed.(îª½Ôıÿÿÿÿ8ñ£€Ì0
+†
+java:S1104"cMake handleManagerByEmployee a static final constant or non-public and provide accessors if needed.(’¶¹¨üÿÿÿÿ8ò£€Ì0
+S
+java:S1611"1Remove the parentheses around the "ctx" parameter(­©ÜÓıÿÿÿÿ8§¤€Ì0
+N
+java:S1611'"1Remove the parentheses around the "ctx" parameter(¬¯ÑÜ8®¤€Ì0
+X	java:S125("<This block of commented-out lines of code should be removed.(¨•ÕĞ8¯¤€Ì0
+N
+java:S16115"1Remove the parentheses around the "ctx" parameter(½Şë¨8°¤€Ì0
+X	java:S1256"<This block of commented-out lines of code should be removed.(¨•ÕĞ8±¤€Ì0
+N
+java:S1611C"1Remove the parentheses around the "ctx" parameter(üÖ´š8²¤€Ì0
+S
+java:S1611V"1Remove the parentheses around the "ctx" parameter(Í‡¨ûÿÿÿÿ8´¤€Ì0
+N
+java:S1611k"1Remove the parentheses around the "ctx" parameter(«íƒÁ8¶¤€Ì0
+S
+java:S1611}"1Remove the parentheses around the "ctx" parameter(îª½Ôıÿÿÿÿ8·¤€Ì0
+T
+java:S1611"1Remove the parentheses around the "ctx" parameter(’¶¹¨üÿÿÿÿ8¹¤€Ì0
+C
+java:S1068"&Remove this unused "us" private field.(€½©œ8½¤€Ì0

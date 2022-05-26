@@ -1,5 +1,6 @@
 package com.revature.models;
 
+
 public class User {
     private int user_id;
     private String username;
@@ -9,7 +10,30 @@ public class User {
     private String email;
     private int user_role;
 
+    public User(){
 
+    }
+
+    public User(int user_id) {
+        this.user_id = user_id;
+    }
+
+    public User(String username, String password, String first_name, String last_name, String email) {
+        this.username = username;
+        this.password = password;
+        this.first_name = first_name;
+        this.last_name = last_name;
+        this.email = email;
+    }
+
+    public User(int user_id, String username, String password, String first_name, String last_name, String email) {
+        this.user_id = user_id;
+        this.username = username;
+        this.password = password;
+        this.first_name = first_name;
+        this.last_name = last_name;
+        this.email = email;
+    }
 
     public User(int user_id, String username, String password, String first_name, String last_name, String email, int user_role) {
         this.user_id = user_id;
@@ -20,14 +44,6 @@ public class User {
         this.email = email;
         this.user_role = user_role;
     }
-
-    public User(int anInt, String string, String string1, String string2, String string3) {
-    }
-
-    public User() {
-
-    }
-
     public int getUser_id() {
         return user_id;
     }
@@ -82,5 +98,18 @@ public class User {
 
     public void setUser_role(int user_role) {
         this.user_role = user_role;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +"\n" +
+                "user_id=" + user_id + "\n" +
+                ", username='" + username + "\n" +
+                ", password='" + password + "\n" +
+                ", first_name='" + first_name + "\n" +
+                ", last_name='" + last_name + "\n" +
+                ", email='" + email + '\'' + "\n" +
+                ", user_role=" + user_role +
+                '}';
     }
 }

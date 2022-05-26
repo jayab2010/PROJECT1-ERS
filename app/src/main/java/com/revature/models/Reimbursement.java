@@ -1,36 +1,69 @@
 package com.revature.models;
 
-import java.time.LocalDate;
+import java.sql.Date;
 
 public class Reimbursement {
     private int reimbursement_id;
     private int amount;
-    private LocalDate submitted_date;
-    private  LocalDate resolved_date;
+    private Date submitted_date;
+    private Date resolved_date;
     private String description;
     private int reimbursement_author;
     private int reimbursement_resolver;
     private int reimbursement_status;
     private int reimbursement_type;
 
+    private User u;
+
     public Reimbursement() {
     }
 
-    // employee creating a ticket
-    public Reimbursement(int amount, LocalDate submitted_date, String description, int reimbursement_author) {
-        //this.reimbursement_id = reimbursement_id;
-        this.amount = amount;
-        this.submitted_date = submitted_date;
-        //this.resolved_date = resolved_date;
-        this.description = description;
-        this.reimbursement_author = reimbursement_author;
-        //this.reimbursement_resolver = reimbursement_resolver;
-        //this.reimbursement_status = reimbursement_status;
-        //this.reimbursement_type = reimbursement_type;
+    public Reimbursement(User u) {
+        this.reimbursement_author = u.getUser_id();
     }
 
-    public void setDescription(String description) {
+    //manager getting reimbursement id to approve or deny
+    public Reimbursement(int id){
+        this.reimbursement_id = id;
+    }
+
+
+    //user input
+    public Reimbursement(int amount, String description, int reimbursement_type) {
+        this.amount = amount;
         this.description = description;
+        this.reimbursement_type = reimbursement_type;
+    }
+    //reimbursementController input
+    public Reimbursement(int amount, String description, int reimbursement_author, int reimbursement_type) {
+        this.amount = amount;
+        this.submitted_date = submitted_date;
+        this.description = description;
+        this.reimbursement_author = reimbursement_author;
+        this.reimbursement_type = reimbursement_type;
+    }
+
+    //reimbursement service
+    public Reimbursement(int amount, Date submitted_date, String description, int reimbursement_author, int reimbursement_status, int reimbursement_type) {
+        this.amount = amount;
+        this.submitted_date = submitted_date;
+        this.description = description;
+        this.reimbursement_author = reimbursement_author;
+        this.reimbursement_status = reimbursement_status;
+        this.reimbursement_type = reimbursement_type;
+    }
+
+    // full args
+    public Reimbursement(int reimbursement_id, int amount, Date submitted_date, Date resolved_date, String description, int reimbursement_author, int reimbursement_resolver, int reimbursement_status, int reimbursement_type) {
+        this.reimbursement_id = reimbursement_id;
+        this.amount = amount;
+        this.submitted_date = submitted_date;
+        this.resolved_date = resolved_date;
+        this.description = description;
+        this.reimbursement_author = reimbursement_author;
+        this.reimbursement_resolver = reimbursement_resolver;
+        this.reimbursement_status = reimbursement_status;
+        this.reimbursement_type = reimbursement_type;
     }
 
     public int getReimbursement_id() {
@@ -49,19 +82,19 @@ public class Reimbursement {
         this.amount = amount;
     }
 
-    public  LocalDate getSubmitted_date() {
+    public  Date getSubmitted_date() {
         return submitted_date;
     }
 
-    public void setSubmitted_date( LocalDate submitted_date) {
+    public void setSubmitted_date( Date submitted_date) {
         this.submitted_date = submitted_date;
     }
 
-    public  LocalDate getResolved_date() {
+    public  Date getResolved_date() {
         return resolved_date;
     }
 
-    public void setResolved_date( LocalDate resolved_date) {
+    public void setResolved_date( Date resolved_date) {
         this.resolved_date = resolved_date;
     }
 
@@ -108,16 +141,15 @@ public class Reimbursement {
     @Override
     public String toString() {
         return "Reimbursement{" +
-                "reimbursement_id=" + reimbursement_id +
-                ", amount=" + amount +
-                ", submitted_date=" + submitted_date +
-                ", resolved_date=" + resolved_date +
-                ", decription='" + description + '\'' +
-                ", reimbursement_author=" + reimbursement_author +
-                ", reimbursement_resolver=" + reimbursement_resolver +
-                ", reimbursement_status=" + reimbursement_status +
-                ", reimbursement_type=" + reimbursement_type +
+                "reimbursement_id=" + reimbursement_id +"\n"+
+                ", amount=" + amount + "\n"+
+                ", submitted_date=" + submitted_date + "\n"+
+                ", resolved_date=" + resolved_date + "\n"+
+                ", decription='" + description + '\'' + "\n"+
+                ", reimbursement_author=" + reimbursement_author + "\n"+
+                ", reimbursement_resolver=" + reimbursement_resolver + "\n"+
+                ", reimbursement_status=" + reimbursement_status + "\n"+
+                ", reimbursement_type=" + reimbursement_type + "\n"+ "\n"+"\n"+
                 '}';
     }
 }
-

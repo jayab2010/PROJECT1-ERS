@@ -3,27 +3,76 @@
  */
 package com.revature;
 
-import com.revature.dao.Ireimbursement;
-import com.revature.dao.Iuser;
-import com.revature.dao.reimbursementJDBC;
-import com.revature.dao.userJDBC;
-import com.revature.models.Reimbursement;
+import com.revature.controllers.ReimbursementController;
+import com.revature.controllers.UserController;
+import com.revature.dao.*;
+import com.revature.services.ReimbursementService;
 import com.revature.services.UserService;
+import io.javalin.Javalin;
+import io.javalin.http.staticfiles.Location;
 
-import java.time.LocalDate;
+//import static io.javalin.apibuilder.ApiBuilder.path;
+//import static io.javalin.apibuilder.ApiBuilder.post;
 
-
+import static io.javalin.apibuilder.ApiBuilder.*;
 public class MainDriver {
 
     public static void main(String[] args) {
-
-       // Iuser ud = new userJDBC();
-       // UserService us = new UserService(ud);
-
-
+        //IPostDao pd = new PostDaoJDBC();
+        //PostService ps = new PostService(pd);
+        //PostController pc = new PostController(ps);
 
 
-        LocalDate myDate = LocalDate.now();
+
+        Iuser ud = new UserJDBC();
+        Ireimbursement rd = new reimbursementJDBC();
+
+        ReimbursementService rs = new ReimbursementService(rd);
+        UserService us = new UserService(ud, rd);
+
+        UserController uc = new UserController(us);
+        ReimbursementController rc = new ReimbursementController(rs);
+
+
+        Javalin server = Javalin.create(config ->{
+            config.addStaticFiles("/public", Location.CLASSPATH);
+            config.enableCorsForAllOrigins();
+        });
+
+        server.before(ctx -> ctx.header("Access-Control-Allow-Credentials", "true"));
+        server.before(ctx -> ctx.header("Access-Control-Expose-Headers", "*"));
+        server.routes(()-> {
+            path("users", () -> {
+                post("/login", uc.handleLogin);
+                post("/logout", uc.handleLogout);
+                //put("/update", uc.handleUpdateUser);
+            });
+
+            path("reimbursement", () -> {
+                post("/createReimbursement", rc.handleCreateReimbursement);
+                get("/employeeViewPending", rc.handleEmployeeViewPending);
+                get("/employeeViewResolved", rc.handleEmployeeViewResolved);
+                //get("/viewAccount", uc.handleViewAccount);
+            });
+
+            path("manager" , () -> {
+                get("/managerApprove", rc.handleManagerApprove);
+                get("/managerDeny", rc.handleManagerDeny);
+                get("/managerViewAllPending", rc.handleManagerAllPending);
+                get("/managerViewAllResolved", rc.handleManagerAllResolved);
+                get("/managerViewByEmployee", rc.handleManagerByEmployee);
+                //get("/managerViewUsers", uc.handleViewAllUserByManager);
+
+            });
+
+        });
+
+        server.start(8000);
+
+
+
+
+       /* LocalDate myDate = LocalDate.now();
         Reimbursement r1 = new Reimbursement(3200, myDate, "Stayed in hotel", 1);
         r1.toString();
         //System.out.print(r1.toString());
@@ -31,6 +80,12 @@ public class MainDriver {
         Ireimbursement createTest = new reimbursementJDBC();
 
         createTest.employeeCreateReimbursment(r1);
+        Iuser userTest = new UserJDBC();
+
+        System.out.print( userTest.readAllUsers(10));
+
+        */
+
     }
 
 }
