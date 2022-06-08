@@ -30,3 +30,8 @@ As an employee I can:
 *	View all resolved requests of all employees
 *	View reimbursement requests of a specific employee
 *	View all employees
+
+# Contributors
+* Jaya Bidwai
+* 
+
