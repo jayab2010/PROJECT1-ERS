@@ -30,6 +30,9 @@ As an employee I can:
 *	View reimbursement requests of a specific employee
 *	View all employees
 
+![manager login](https://user-images.githubusercontent.com/63269317/173253953-53f2029a-4006-43b5-ba76-d3a91b349fb7.png)
+
+
 ## Getting Started
 ## Usage
 
