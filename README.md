@@ -20,17 +20,26 @@ As an employee I can:
 *	View resolved reimbursement requests
 *	View my account information
 *	Update account information
+![2022-06-12 (4)](https://user-images.githubusercontent.com/63269317/173254644-25858466-4b4a-47fc-a38b-f30d48f308b5.png)
+![2022-06-12 (5)](https://user-images.githubusercontent.com/63269317/173254662-b0de4d31-7555-4071-9cd6-e3c46586f090.png)
+![2022-06-12 (6)](https://user-images.githubusercontent.com/63269317/173254668-7e903508-b1bd-49f0-807a-d65940aea0c1.png)
+
+
 ## As a manager I can:
 *	Login
 *	Logout
 *	View the manager home page
 *	Approve/Deny pending reimbursement requests
 *	View all pending requests of all employees
+
 *	View all resolved requests of all employees
 *	View reimbursement requests of a specific employee
 *	View all employees
 
-![manager login](https://user-images.githubusercontent.com/63269317/173253953-53f2029a-4006-43b5-ba76-d3a91b349fb7.png=250x250)
+![manager login](https://user-images.githubusercontent.com/63269317/173253953-53f2029a-4006-43b5-ba76-d3a91b349fb7.png)
+![2022-06-12 (1](https://user-images.githubusercontent.com/63269317/173254563-15389979-1a0f-445e-92d6-a14f43c940b4.png)
+![2022-06-12 (2)](https://user-images.githubusercontent.com/63269317/173254575-171ea3f4-838a-4a5c-9f40-473e421d1e9c.png)
+
 
 
 ## Getting Started
